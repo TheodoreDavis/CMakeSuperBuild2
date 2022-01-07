@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+check_required_components("@PROJECT_NAME@")
+
+include(CMakeFindDependencyMacro)
+set(HelloWorld_DIR ${CMAKE_CURRENT_LIST_DIR}/../external/helloworld/cmake/)
+message("~~~Path: ${HelloWorld_DIR}")
+find_dependency(HelloWorld)
+
+include("${CMAKE_CURRENT_LIST_DIR}/HelloGalaxy-targets.cmake")

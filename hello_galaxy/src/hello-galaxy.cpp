@@ -3,7 +3,7 @@
 #include <cmakepublic/cmake_public.hpp>
 
 std::string say_a_lot() {
-    return say_hello() + std::endl
-    + say_goodbye() + std::endl
-    + "Goodbye from CMakeSuperbuild2 :)" + std::endl;
+    return say_hello()
+    + say_goodbye()
+    + "Goodbye from CMakeSuperbuild2 :)";
 }
